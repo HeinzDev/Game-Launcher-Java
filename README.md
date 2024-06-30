@@ -3,6 +3,7 @@
 # Game Launcher
 
 O **Game Launcher** é uma aplicação simples feita em Java com o framework Swing, servindo como um inicializador de jogos da Steam. O projeto visa oferecer uma interface intuitiva para os usuários acessarem seus jogos de forma prática.
+<p align="center"><img src="https://i.imgur.com/xUkOptr.png"></p>
 
 ## Resumo
 
@@ -18,9 +19,13 @@ Este projeto necessita da biblioteca [org.json](https://codeload.github.com/stle
 
 ## Configurações
 
-O Game Launcher requer um arquivo `.json` externo para a renderização dos jogos. Na raiz do repositório, há um arquivo de exemplo.
+O Game Launcher requer um arquivo `jogos.json` externo para a renderização dos jogos. Na raiz do repositório, há um arquivo de exemplo.
 
-Para a inicialização correta, é necessário incluir o ID de cada jogo no arquivo `.json`. Você pode obter esse ID na página da Steam ou em seu arquivo `.desktop`.
+Para a inicialização correta, é necessário incluir o ID de cada jogo no parâmetro **"caminho"** o arquivo `.json`. Você pode obter esse ID na página da Steam ou em seu arquivo `.desktop`.
+
+<p align="center"><img src="https://i.imgur.com/HKgOsoL.jpeg"></p>
+<p align="center"><img src="https://i.imgur.com/9UC5rm6.png"></p>
+
 
 ## Executando a Aplicação
 
