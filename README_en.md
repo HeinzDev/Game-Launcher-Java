@@ -28,7 +28,7 @@ For correct initialization, each game ID must be included in the **"path"** para
 
 ## Running the Application
 
-1. Download the release or compile the code manually.
+1. Download the [release](https://github.com/HeinzDev/Game-Launcher-Java/releases) or compile the code manually.
 
 2. Add the `jogos.json` file to the project directory.
 
