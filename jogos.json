@@ -1,19 +1,19 @@
 [
     {
         "nome": "Valorant",
-        "caminho": "/home/games/...",
+        "caminho": "",
         "icone": "valorant.png",
         "fundo": "valorant_big.png",
     },
     {
         "nome": "Fallout: New Vegas",
-        "caminho": "/home/games/...",
+        "caminho": "22380",
         "icone": "fnv.png",
         "fundo": "fnv_big.png",
     },
     {
         "nome": "Catherine",
-        "caminho": "",
+        "caminho": "893180",
         "icone": "cat.png",
         "fundo": "cat_big.png",
     },
@@ -37,13 +37,13 @@
     },
     {
         "nome": "Fallout: New Vegas",
-        "caminho": "/home/games/...",
+        "caminho": "22380",
         "icone": "fnv.png",
         "fundo": "fnv_big.png",
     },
     {
         "nome": "Catherine",
-        "caminho": "",
+        "caminho": "893180",
         "icone": "cat.png",
         "fundo": "cat_big.png",
     },
