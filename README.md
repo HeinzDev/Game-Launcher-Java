@@ -29,7 +29,7 @@ Para a inicialização correta, é necessário incluir o ID de cada jogo no par�
 
 ## Executando a Aplicação
 
-1. Baixe a release ou compile o código manualmente.
+1. Baixe a [release](https://github.com/HeinzDev/Game-Launcher-Java/releases) ou compile o código manualmente.
 
 2. Adicione o arquivo `jogos.json` ao diretório do projeto.
 
