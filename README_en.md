@@ -13,11 +13,17 @@ The **Game Launcher** is a simple Java application using the Swing framework, se
 - [Contributing](#contributing)
 - [Creator](#creator)
 
-## Dependencies
-
-This project requires the [org.json](https://codeload.github.com/stleary/JSON-java/zip/refs/tags/20240303) library to function correctly in a development environment.
-
 ## Configuration
+
+### Build
+
+Project setup for development environment:
+
+```
+mvn clean install
+```
+
+### Json Files
 
 The Game Launcher requires an external `jogos.json` file for rendering the games. There is a sample file in the repository's root.
 

@@ -13,11 +13,17 @@ O **Game Launcher** é uma aplicação simples feita em Java com o framework Swi
 - [Contribuindo](#contribuindo)
 - [Criador](#criador)
 
-## Dependências
-
-Este projeto necessita da biblioteca [org.json](https://codeload.github.com/stleary/JSON-java/zip/refs/tags/20240303) para funcionar corretamente em ambiente de desenvolvimento.
-
 ## Configurações
+
+### Build
+
+Setup do projeto em ambiente de desenvolvimento:
+
+```
+mvn clean install
+```
+
+### Json Files
 
 O Game Launcher requer um arquivo `jogos.json` externo para a renderização dos jogos. Na raiz do repositório, há um arquivo de exemplo.
 
