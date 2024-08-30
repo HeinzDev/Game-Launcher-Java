@@ -1,0 +1,24 @@
+
+
+.text {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 40;
+    -fx-font-family: 'Roboto';
+}
+
+.botao {
+    -fx-background-color: #1f1f2b;
+    -fx-text-fill: white;
+    -fx-font-size: 20;
+    -fx-font-family: 'Roboto';
+    -fx-border-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-transition: 3s ease;
+}
+
+.botao:hover {
+    -fx-background-color: #272738;
+    -fx-cursor: hand;
+}

@@ -1,38 +1,39 @@
 package br.heinz.iftm.gui;
 
-import java.awt.Color;
-import java.awt.event.ActionEvent;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.StackPane;
+import javafx.scene.layout.VBox;
 
-import br.heinz.iftm.gui.componentes.Botao;
-import br.heinz.iftm.gui.componentes.Imagem;
-import br.heinz.iftm.gui.componentes.TelaPanel;
+public class LoginPanel extends StackPane {
 
-public class LoginPanel extends TelaPanel {
-	
-	public LoginPanel(JPanel telas, JFrame janela) {
-		super(telas, janela);
-		
+    public LoginPanel(Janela janela) {
+        VBox vbox = new VBox(10);
+        vbox.setStyle("-fx-background-color: #202028; -fx-padding: 20;");
+        vbox.setAlignment(Pos.CENTER);
 
-		
-		JTextField txtLogin = new JTextField();
-		txtLogin.setBounds(910, 480, 220, 30);
-		JTextField txtSenha = new JTextField();
-		txtSenha.setBounds(910, 420, 220, 30);
-		
-		JButton botaoLogin = new Botao("Fazer Login");
-		botaoLogin.addActionListener(this);
-		this.add(botaoLogin);
-		this.add(txtLogin);
-		this.add(txtSenha);
-	}
-	
-	public void executarBotao(ActionEvent e) {
-		trocarTela("Tela principal");
-	}
+        TextField txtLogin = new TextField();
+        txtLogin.setPromptText("Login");
+        txtLogin.setMaxWidth(220);
+        
+        TextField txtSenha = new TextField();
+        txtSenha.setPromptText("Senha");
+        txtSenha.setMaxWidth(220);
+        
+        Button botaoLogin = new Button("Login");
+        botaoLogin.setOnAction(e -> executarBotao(janela));
+        botaoLogin.setStyle("-fx-background-color: #29294d; -fx-font-size: 25; -fx-text-fill: white; -fx-pointer: hand;");
 
+        vbox.getChildren().addAll(txtLogin, txtSenha, botaoLogin);
+        
+        this.getChildren().add(vbox);
+        // Centraliza o VBox dentro do StackPane
+        StackPane.setAlignment(vbox, javafx.geometry.Pos.CENTER);
+    }
+
+    private void executarBotao(Janela janela) {
+        janela.setCenterPanel(new BibliotecaPanel());
+    }
 }

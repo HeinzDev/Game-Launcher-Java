@@ -9,16 +9,35 @@
   <version>1</version>
 
   <name>game-launcher</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>http://www.empty.com</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
+        <javafx.version>19</javafx.version>
+        <javafx.maven.plugin.version>0.0.8</javafx.maven.plugin.version>
   </properties>
 
   <dependencies>
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-controls</artifactId>
+      <version>${javafx.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.openjfx</groupId>
+      <artifactId>javafx-swing</artifactId>
+      <version>${javafx.version}</version>
+    </dependency>
+
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-fxml</artifactId>
+        <version>22</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -39,7 +58,12 @@
     <testSourceDirectory>src/test</testSourceDirectory>
     <resources>
         <resource>
-            <directory>src</directory>
+            <directory>src/</directory>
+            <includes>
+                <include>**/*.png</include>
+                <include>**/*.css</include>
+                <include>**/*.ttf</include>
+            </includes>
         </resource>
     </resources>
     <testResources>
@@ -48,8 +72,42 @@
         </testResource>
     </testResources>
 
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
+        <plugin>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-maven-plugin</artifactId>
+            <version>${javafx.maven.plugin.version}</version>
+            <configuration>
+              <mainClass>br.heinz.iftm.tests.Main</mainClass> <!-- Substitua com o nome completo da sua classe principal -->
+            </configuration>
+        </plugin>
+                <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-shade-plugin</artifactId>
+            <version>3.2.4</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>shade</goal>
+                    </goals>
+                    <configuration>
+                        <filters>
+                            <filter>
+                                <artifact>*:*</artifact>
+                                <excludes>
+                                    <exclude>META-INF/*.SF</exclude>
+                                    <exclude>META-INF/*.DSA</exclude>
+                                    <exclude>META-INF/*.RSA</exclude>
+                                </excludes>
+                            </filter>
+                        </filters>
+                        <shadedArtifactAttached>true</shadedArtifactAttached>
+                        <shadedClassifierName>jar</shadedClassifierName>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
@@ -90,6 +148,5 @@
           <version>3.0.0</version>
         </plugin>
       </plugins>
-    </pluginManagement>
   </build>
 </project>
