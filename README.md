@@ -3,7 +3,7 @@
 # Game Launcher
 
 O **Game Launcher** é uma aplicação simples feita em Java com o framework Swing, servindo como um inicializador de jogos da Steam. O projeto visa oferecer uma interface intuitiva para os usuários acessarem seus jogos de forma prática.
-<p align="center"><img src="https://i.imgur.com/xUkOptr.png"></p>
+<p align="center"><img src="https://i.imgur.com/5WJsli2.png"></p>
 
 ## Resumo
 

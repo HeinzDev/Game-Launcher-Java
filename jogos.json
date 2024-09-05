@@ -1,11 +1,5 @@
 [
     {
-        "nome": "Valorant",
-        "caminho": "",
-        "icone": "valorant.png",
-        "fundo": "valorant_big.png"
-    },
-    {
         "nome": "Fallout: New Vegas",
         "caminho": "22380",
         "icone": "fnv.png",
@@ -30,33 +24,21 @@
         "fundo": "blasphemous_big.png"
     },
     {
-        "nome": "Valorant",
-        "caminho": "/home/games/...",
-        "icone": "valorant.png",
-        "fundo": "valorant_big.png"
+        "nome": "Final Fantasy VII",
+        "caminho": "39140",
+        "icone": "ff7.png",
+        "fundo": "ff7_big.png"
     },
     {
-        "nome": "Fallout: New Vegas",
-        "caminho": "22380",
-        "icone": "fnv.png",
-        "fundo": "fnv_big.png"
+        "nome": "Doom",
+        "caminho": "379720",
+        "icone": "doom.png",
+        "fundo": "doom_big.png"
     },
     {
-        "nome": "Catherine",
-        "caminho": "893180",
-        "icone": "cat.png",
-        "fundo": "cat_big.png"
-    },
-    {
-        "nome": "Jet Set Radio",
-        "caminho": "205950",
-        "icone": "jetset.png",
-        "fundo": "jetset_big.png"
-    },
-    {
-        "nome": "Blasphemous",
-        "caminho": "774361",
-        "icone": "blasphemous.png",
-        "fundo": "blasphemous_big.png"
+        "nome": "Hollow Knight",
+        "caminho": "367520",
+        "icone": "hollow.png",
+        "fundo": "hollow_big.png"
     }
 ]
