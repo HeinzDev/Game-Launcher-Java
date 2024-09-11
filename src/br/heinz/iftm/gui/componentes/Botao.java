@@ -1,15 +1,26 @@
 package br.heinz.iftm.gui.componentes;
 
-import java.awt.Color;
+import javafx.scene.control.Button;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 
-import javax.swing.JButton;
+public class Botao extends Button {
+	public Botao(String texto, int size) {
+		Image image = new Image(getClass().getResourceAsStream(texto));
+		ImageView imgVw = new ImageView(image);
+		imgVw.setFitHeight(size);
+		imgVw.setFitWidth(size);
+		imgVw.setOpacity(0.7);
 
-public class Botao extends JButton {
-	public Botao(String texto) {
-		super(texto);
-		this.setBounds(1920 / 2, 600, 120, 50);
-		this.setBackground(Color.decode("#6d5dd3"));
-		this.setFocusPainted(false);
-		this.setBorderPainted(false);
+		this.setOnMouseEntered(event -> {
+			imgVw.setOpacity(1);
+		});
+		this.setOnMouseExited(event -> {
+			imgVw.setOpacity(0.7);
+		});
+
+		this.setGraphic(imgVw);
+		this.getStyleClass().add("btn");
+		this.setStyle("-fx-background-color: transparent; -fx-border-color: transparent; fx-cursor: hand;");
 	}
 }

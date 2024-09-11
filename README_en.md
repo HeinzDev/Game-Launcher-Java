@@ -2,7 +2,7 @@
 
 # Game Launcher
 
-The **Game Launcher** is a simple Java application using the Swing framework, serving as a Steam game launcher. The project aims to provide an intuitive interface for users to access their games easily.
+The **Game Launcher** is a simple Java application using the JavaFX framework, serving as a Steam game launcher. The project aims to provide an intuitive interface for users to access their games easily.
 <p align="center"><img src="https://i.imgur.com/5WJsli2.png"></p>
 
 ## Overview
